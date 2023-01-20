@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="todolist-container">
+        <div class="todolist__form-wrapper">
+            <form id="todolist_form">
+                <input id="todolist-adder-input" class="todolist__form-input" type="text" placeholder="Add to do..."
+                    required minlength="3" clearInput>
+                <!-- clear btn -->
+                <div id="clear-input" class="input-clear-btn">
+                    <i id="input-clear" class="bi bi-x clear"></i>
+                </div>
+
+                <button class="todolist__form-submit" type="submit"><i class="fas fa-plus"></i> Create</button>
+            </form>
+            <button id="delete-all-todo" class="delete-all-btn"> <i class="bi bi-trash3-fill"></i> &nbsp;
+                Delete
+                All</button>
+        </div>
+        <ul class="todolist-collection" id="todolist-collection"></ul>
+    </div>
+</body>
+
+</html>
