@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>Document</title>
+    <title>My to do list</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./app.js" defer></script>
 </head>
@@ -34,6 +34,23 @@
                 All</button>
         </div>
         <ul class="todolist-collection" id="todolist-collection"></ul>
+    </div>
+
+    <div id="modal_window" class="modal-window">
+        <div class="modal-window-img-wrapper">
+            <img class="confirm-img" src="./img/aki_hayakawa_confirm.jpg" alt="">
+            <p class="modal-confirm-pr">
+                Are you sure?
+            </p>
+        </div>
+        <div class="modal-window-btn-wrapper">
+            <button id="modal_yes" class="modal-btn btn-yes">
+                Delete all
+            </button>
+            <button id="modal_no" class="modal-btn btn-no">
+                Cancel
+            </button>
+        </div>
     </div>
 </body>
 
