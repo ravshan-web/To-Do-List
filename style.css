@@ -111,6 +111,26 @@
   transform: scale(0.9);
 }
 
+.todolist_search {
+  width: 100%;
+  box-shadow: var(--primary-box-shadow);
+  border-radius: var(--main-border-radius);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.todolist_search input {
+  height: 55px;
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
 .todolist-collection {
   display: grid;
   justify-items: center;
@@ -274,9 +294,9 @@
 /* Modal Window Styles */
 .modal-window {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
   margin: 0;
   padding: 0;
   width: 100vw;
