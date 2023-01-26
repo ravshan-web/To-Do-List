@@ -277,11 +277,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
   width: 100vw;
   min-height: 100vh;
   backdrop-filter: blur(15px);
-  border-radius: 12px;
-  background: rgb(0, 0, 0, 0.2);
+  /*  */
+  background: rgb(0, 0, 0, 0.1);
   display: none;
   justify-content: center;
   align-items: center;

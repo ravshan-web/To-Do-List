@@ -10,7 +10,7 @@ const modalConfirmYes = document.querySelector('#modal_yes')
 const modalConfirmNo = document.querySelector('#modal_no')
 
 const body = document.querySelector("body")
-console.log(body);
+// console.log(body);
 
 todolistInputClearX.addEventListener("click" , ()=>{
     toDoListFormInput.value = "";
@@ -118,23 +118,17 @@ function AddToDo(e){
 
 deleteAlltodolist.addEventListener("click", ()=>{
     modalWindow.style.display = "flex";
-    // let confirmIt = confirm("Do you really want delete all of tasks???");
-    // if(confirmIt){
-    //     todolistCollection.innerHTML = "";
-    //     toDoListFormInput.value = "";
-    // }
+    modalConfirmYes.addEventListener('click', ()=>{
+        todolistCollection.innerHTML = "";
+        toDoListFormInput.value = "";
+        modalWindow.style.display = "none";
+    })
+
+    modalConfirmNo.addEventListener('click', ()=>{
+        modalWindow.style.display = "none";
+    })
 })
 
-    
 
-    
-
-
-    
-    
-
-    
-    
-  
 
 
